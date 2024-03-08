@@ -29,7 +29,7 @@ const applyConfig = (config) => {
 
   return config;
 };
-
+```
 
 
 ## Development
