@@ -1,6 +1,6 @@
 {
   "name": "@codesyntax/volto-countup-block",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "volto-countup-block: Volto add-on",
   "main": "src/index.js",
   "license": "MIT",
@@ -45,7 +45,7 @@
   "peerDependencies": {
     "@plone/volto": "^17.0.0"
   },
-  "dependencies":{
+  "dependencies": {
     "react-countup": "*"
   }
 }
