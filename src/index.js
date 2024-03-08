@@ -9,12 +9,19 @@ const applyConfig = (config) => {
     title: 'Count Up',
     icon: mapSVG,
     edit: CountUpBlockEdit,
-    view: CountUpBlockEdit,
+    view: CountUpBlockView,
     restricted: false,
     mostUsed: false,
     blockHasOwnFocusManagement: false,
     sidebarTab: 1,
     common: true,
+    titleTags: [
+      ['h1', 'h1'],
+      ['h2', 'h2'],
+      ['h3', 'h3'],
+      ['h4', 'h4'],
+      ['strong', 'strong'],
+    ],
   };
 
   return config;

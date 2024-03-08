@@ -1,9 +1,42 @@
 import React from 'react';
 import CountUp from 'react-countup';
-export const BlockViewComponent = (props) => {
-  const { data } = props;
+import { Segment } from 'semantic-ui-react';
+export const BlockViewComponent = ({ data }) => {
+  // Counter config
+  const {
+    start,
+    end,
+    duration,
+    prefix,
+    suffix,
+    decimal,
+    decimals,
+    separator,
+    delay,
+  } = data;
 
-  return <CountUp start={0} end={17000} duration={10} delay={0} />;
+  // Title config
+  const { title, titleTag, titlePosition } = data;
+  const TitleTag = titleTag || 'h2';
+
+  return (
+    <Segment>
+      {title && titlePosition === 'above' && <TitleTag>{title}</TitleTag>}
+
+      <CountUp
+        delay={delay}
+        start={start}
+        end={end}
+        duration={duration}
+        prefix={prefix}
+        suffix={suffix}
+        decimal={decimal}
+        decimals={decimals}
+        separator={separator}
+      />
+      {title && titlePosition === 'below' && <TitleTag>{title}</TitleTag>}
+    </Segment>
+  );
 };
 
 export const CountUpBlockView = (props) => {
