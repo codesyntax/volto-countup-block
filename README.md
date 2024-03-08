@@ -2,6 +2,36 @@
 
 ## Introduction
 
+A simple block to show a rolling number.
+
+Internally it supports the basic options of [react-countup](https://www.npmjs.com/package/react-countup)
+
+It allows setting the start and end values, the duration of the counting, the start delay, decimal and thousands separator, ...
+
+It also allows adding a title and selecting its heading and position.
+
+## Install
+
+Add `@codesyntax/volto-countup-block` to you project's or addon's dependencies and you are done. The block will be available.
+
+## Customization
+
+You can restrict the list of allowed tags to render the title of the counter. Just modify the `titleTags` property of the block in your config:
+
+
+```js
+const applyConfig = (config) => {
+  // Own blocks
+  config.blocks.blocksConfig['countUpBlock']['titleTags'] = [
+      ['h3', 'h3'],
+      ['h4', 'h4'],
+  ];
+
+  return config;
+};
+
+
+
 ## Development
 
 You can develop an add-on in isolation using the boilerplate already provided by the add-on generator.
