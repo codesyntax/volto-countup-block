@@ -1652,6 +1652,7 @@ __metadata:
     postcss-less: 6.0.0
     postcss-scss: 4.0.8
     prettier: 3.0.3
+    react-countup: "*"
     release-it: ^16.1.5
     stylelint: 15.10.3
     stylelint-config-idiomatic-order: 9.0.0
@@ -3387,6 +3388,13 @@ __metadata:
     path-type: ^4.0.0
     yaml: ^1.10.0
   checksum: c53bf7befc1591b2651a22414a5e786cd5f2eeaa87f3678a3d49d6069835a9d8d1aef223728e98aa8fec9a95bf831120d245096db12abe019fecb51f5696c96f
+  languageName: node
+  linkType: hard
+
+"countup.js@npm:^2.8.0":
+  version: 2.8.0
+  resolution: "countup.js@npm:2.8.0"
+  checksum: bfded0c6051b79be5f07c097f97bc39f29e95b92b01077fc214ee118b0afbc53988b3a491e2319ea7a1896014a9cda52f150722ccce9afd677faea5ade1274dd
   languageName: node
   linkType: hard
 
@@ -7020,6 +7028,17 @@ __metadata:
   bin:
     rc: ./cli.js
   checksum: 2e26e052f8be2abd64e6d1dabfbd7be03f80ec18ccbc49562d31f617d0015fbdbcf0f9eed30346ea6ab789e0fdfe4337f033f8016efdbee0df5354751842080e
+  languageName: node
+  linkType: hard
+
+"react-countup@npm:*":
+  version: 6.5.0
+  resolution: "react-countup@npm:6.5.0"
+  dependencies:
+    countup.js: ^2.8.0
+  peerDependencies:
+    react: ">= 16.3.0"
+  checksum: 26647467dd723f8d14ef689e001b7d1d662f96b979f7161d2c9c47f13e035e9b1c2fc09390017b7c007444b4c7bace849a1ce80b21750644e3a08c11b138ca92
   languageName: node
   linkType: hard
 

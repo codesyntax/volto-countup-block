@@ -12,11 +12,11 @@ export const BlockViewComponent = ({ data }) => {
     decimal,
     decimals,
     separator,
-    delay,
+    delay = 2,
   } = data;
 
   // Title config
-  const { title, titleTag, titlePosition } = data;
+  const { title, titleTag, titlePosition = 'above' } = data;
   const TitleTag = titleTag || 'h2';
 
   return (

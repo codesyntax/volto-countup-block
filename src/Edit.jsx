@@ -16,7 +16,7 @@ export const CountUpBlockEdit = (props) => {
 
   const intl = useIntl();
 
-  const schema = CountUpBlockSchema(intl);
+  const schema = CountUpBlockSchema(intl, data);
 
   return (
     <>
