@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Plone\n"
-"POT-Creation-Date: 2024-03-08T16:09:08.899Z\n"
+"POT-Creation-Date: 2024-03-12T22:32:22.558Z\n"
 "Last-Translator: Plone i18n <plone-i18n@lists.sourceforge.net>\n"
 "Language-Team: Plone i18n <plone-i18n@lists.sourceforge.net>\n"
 "Content-Type: text/plain; charset=utf-8\n"
@@ -14,81 +14,131 @@ msgstr ""
 "Domain: volto\n"
 
 #. Default: "Above"
-#: schema
+#: messages
 msgid "Above"
 msgstr ""
 
 #. Default: "Below"
-#: schema
+#: messages
 msgid "Below"
 msgstr ""
 
+#. Default: "Character to use as decimal"
+#: messages
+msgid "Character to use as decimal"
+msgstr ""
+
+#. Default: "Character to use as thousands separator"
+#: messages
+msgid "Character to use as thousands separator"
+msgstr ""
+
 #. Default: "CountUp block configuration"
-#: schema
+#: messages
 msgid "CountUp block configuration"
 msgstr ""
 
-#. Default: "Decimal character to use"
-#: schema
-msgid "Decimal character to use"
+#. Default: "Decimal separator"
+#: messages
+msgid "Decimal separator"
 msgstr ""
 
-#. Default: "Delay, number of seconds to wait until the counter starts"
-#: schema
-msgid "Delay, number of seconds to wait until the counter starts"
+#. Default: "Delay"
+#: messages
+msgid "Delay"
 msgstr ""
 
 #. Default: "Duration"
-#: schema
+#: messages
 msgid "Duration"
 msgstr ""
 
-#. Default: "Duration of the count up"
-#: schema
-msgid "Duration of the count up"
+#. Default: "Duration in seconds, by default, 2"
+#: messages
+msgid "Duration in seconds, by default, 2"
 msgstr ""
 
-#. Default: "End number"
-#: schema
-msgid "End number"
+#. Default: "End"
+#: messages
+msgid "End"
+msgstr ""
+
+#. Default: "Final number for the countUp"
+#: messages
+msgid "Final number for the countUp"
 msgstr ""
 
 #. Default: "HTML tag that will be used to render the title"
-#: schema
+#: messages
 msgid "HTML tag that will be used to render the title"
 msgstr ""
 
-#. Default: "Number of decimal characters"
-#: schema
-msgid "Number of decimal characters"
+#. Default: "Number of decimals to render"
+#: messages
+msgid "Number of decimals to render"
+msgstr ""
+
+#. Default: "Nª of Decimals"
+#: messages
+msgid "Nª of Decimals"
+msgstr ""
+
+#. Default: "Position"
+#: messages
+msgid "Position"
 msgstr ""
 
 #. Default: "Position of the title tag"
-#: schema
+#: messages
 msgid "Position of the title tag"
 msgstr ""
 
+#. Default: "Prefix"
+#: messages
+msgid "Prefix"
+msgstr ""
+
 #. Default: "Prefix that will be shown before the number"
-#: schema
+#: messages
 msgid "Prefix that will be shown before the number"
 msgstr ""
 
-#. Default: "Start number"
-#: schema
-msgid "Start number"
+#. Default: "Seconds to wait until the counter starts"
+#: messages
+msgid "Seconds to wait until the counter starts"
+msgstr ""
+
+#. Default: "Start"
+#: messages
+msgid "Start"
+msgstr ""
+
+#. Default: "Starting number for the countUp"
+#: messages
+msgid "Starting number for the countUp"
+msgstr ""
+
+#. Default: "Suffix"
+#: messages
+msgid "Suffix"
 msgstr ""
 
 #. Default: "Suffix that will be shown after the number"
-#: schema
+#: messages
 msgid "Suffix that will be shown after the number"
 msgstr ""
 
 #. Default: "Thousands separator"
-#: schema
+#: messages
 msgid "Thousands separator"
 msgstr ""
 
+#. Default: "Title HTML tag"
+#: messages
+msgid "Title HTML tag"
+msgstr ""
+
 #. Default: "Title of the counter"
-#: schema
+#: messages
 msgid "Title of the counter"
 msgstr ""

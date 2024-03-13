@@ -1,0 +1,1 @@
+Modify schema to simplify block edition @ionlizarazu
