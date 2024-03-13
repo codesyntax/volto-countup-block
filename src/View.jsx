@@ -4,17 +4,7 @@ import { Segment } from 'semantic-ui-react';
 import { withBlockExtensions } from '@plone/volto/helpers';
 
 const CountUpBlockView = ({ data, className }) => {
-  const {
-    start,
-    end,
-    duration,
-    prefix,
-    suffix,
-    decimal,
-    decimals,
-    separator,
-    delay = 2,
-  } = data;
+  const { delay = 2 } = data;
 
   // Title config
   const { title, titleTag, titlePosition = 'above' } = data;
@@ -24,17 +14,7 @@ const CountUpBlockView = ({ data, className }) => {
     <Segment className={className}>
       {title && titlePosition === 'above' && <TitleTag>{title}</TitleTag>}
 
-      <CountUp
-        delay={delay}
-        start={start}
-        end={end}
-        duration={duration}
-        prefix={prefix}
-        suffix={suffix}
-        decimal={decimal}
-        decimals={decimals}
-        separator={separator}
-      />
+      <CountUp {...data} delay={delay} />
       {title && titlePosition === 'below' && <TitleTag>{title}</TitleTag>}
     </Segment>
   );
