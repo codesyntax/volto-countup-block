@@ -1,8 +1,9 @@
 import React from 'react';
 import CountUp from 'react-countup';
 import { Segment } from 'semantic-ui-react';
-export const BlockViewComponent = ({ data }) => {
-  // Counter config
+import { withBlockExtensions } from '@plone/volto/helpers';
+
+const CountUpBlockView = ({ data, className }) => {
   const {
     start,
     end,
@@ -20,7 +21,7 @@ export const BlockViewComponent = ({ data }) => {
   const TitleTag = titleTag || 'h2';
 
   return (
-    <Segment>
+    <Segment className={className}>
       {title && titlePosition === 'above' && <TitleTag>{title}</TitleTag>}
 
       <CountUp
@@ -39,8 +40,4 @@ export const BlockViewComponent = ({ data }) => {
   );
 };
 
-export const CountUpBlockView = (props) => {
-  const { data } = props;
-
-  return <BlockViewComponent data={data} />;
-};
+export default withBlockExtensions(CountUpBlockView);

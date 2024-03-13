@@ -3,7 +3,7 @@ import { SidebarPortal, BlockDataForm } from '@plone/volto/components';
 import { useIntl } from 'react-intl';
 
 import { CountUpBlockSchema } from './schema';
-import { BlockViewComponent } from './View';
+import CountUpBlockView from './View';
 
 export const CountUpBlockEdit = (props) => {
   const { block, data, selected } = props;
@@ -28,7 +28,7 @@ export const CountUpBlockEdit = (props) => {
           onChangeField={handleChange}
         />
       </SidebarPortal>
-      <BlockViewComponent data={data} />
+      <CountUpBlockView data={data} />
     </>
   );
 };
