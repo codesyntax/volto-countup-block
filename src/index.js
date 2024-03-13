@@ -1,13 +1,13 @@
 import { CountUpBlockEdit } from './Edit.jsx';
-import { CountUpBlockView } from './View.jsx';
-import mapSVG from '@plone/volto/icons/map.svg';
+import CountUpBlockView from './View.jsx';
+import iconSVG from '@plone/volto/icons/circle-top.svg';
 
 const applyConfig = (config) => {
   // Own blocks
   config.blocks.blocksConfig['countUpBlock'] = {
     id: 'countUpBlock',
     title: 'Count Up',
-    icon: mapSVG,
+    icon: iconSVG,
     edit: CountUpBlockEdit,
     view: CountUpBlockView,
     restricted: false,
