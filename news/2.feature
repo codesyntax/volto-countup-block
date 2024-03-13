@@ -1,0 +1,1 @@
+Add support of block and class extensions @ionlizarazu
