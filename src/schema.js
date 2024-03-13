@@ -3,7 +3,7 @@ import messages from './messages.js';
 
 export const CountUpBlockSchema = (intl, data) => {
   const decimals =
-    data.start % 1 != 0 || data.end % 1 != 0 ? [('decimal', 'decimals')] : [];
+    data.start % 1 !== 0 || data.end % 1 !== 0 ? [('decimal', 'decimals')] : [];
   const thousands = data.start >= 1000 || data.end >= 1000 ? ['separator'] : [];
   const separator =
     decimals.length || thousands.length
