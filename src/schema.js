@@ -2,9 +2,26 @@ import config from '@plone/volto/registry';
 import messages from './messages.js';
 
 export const CountUpBlockSchema = (intl, data) => {
+  const countUpConfig = config.blocks.blocksConfig['countUpBlock'];
   const decimals =
-    data.start % 1 !== 0 || data.end % 1 !== 0 ? ['decimal', 'decimals'] : [];
-  const thousands = data.start >= 1000 || data.end >= 1000 ? ['separator'] : [];
+    (data.start % 1 !== 0 || data.end % 1 !== 0) &&
+    countUpConfig.schemaEditable.decimals.length
+      ? countUpConfig.schemaEditable.decimals
+      : [];
+  const thousands =
+    (data.start >= 1000 || data.end >= 1000) &&
+    countUpConfig.schemaEditable.thousands.length
+      ? countUpConfig.schemaEditable.thousands
+      : [];
+  const time = countUpConfig.schemaEditable.time?.length
+    ? [
+        {
+          id: 'time',
+          title: 'Time config',
+          fields: countUpConfig.schemaEditable.time,
+        },
+      ]
+    : [];
   const separator =
     decimals.length || thousands.length
       ? [
@@ -15,6 +32,24 @@ export const CountUpBlockSchema = (intl, data) => {
           },
         ]
       : [];
+  const extras = countUpConfig.schemaEditable.extras?.length
+    ? [
+        {
+          id: 'extras',
+          title: 'Extra config',
+          fields: countUpConfig.schemaEditable.extras,
+        },
+      ]
+    : [];
+  const styling = countUpConfig.schemaEditable.extras?.length
+    ? [
+        {
+          id: 'styling',
+          title: 'Style config',
+          fields: countUpConfig.schemaEditable.styling,
+        },
+      ]
+    : [];
   return {
     title: intl.formatMessage(messages.countupblockconfig),
     fieldsets: [
@@ -23,17 +58,10 @@ export const CountUpBlockSchema = (intl, data) => {
         title: 'Default',
         fields: ['start', 'end'],
       },
-      {
-        id: 'time',
-        title: 'Time config',
-        fields: ['duration', 'delay'],
-      },
+      ...time,
       ...separator,
-      {
-        id: 'extras',
-        title: 'Extra config',
-        fields: ['prefix', 'suffix'],
-      },
+      ...extras,
+      ...styling,
       {
         id: 'title',
         title: 'Title',
@@ -48,7 +76,7 @@ export const CountUpBlockSchema = (intl, data) => {
       },
       titleTag: {
         title: intl.formatMessage(messages.titleTags),
-        choices: config.blocks.blocksConfig['countUpBlock'].titleTags,
+        choices: countUpConfig.titleTags,
       },
       titlePosition: {
         title: intl.formatMessage(messages.titlePosition),
@@ -100,6 +128,42 @@ export const CountUpBlockSchema = (intl, data) => {
       separator: {
         title: intl.formatMessage(messages.separator),
         type: 'string',
+      },
+      basic: {
+        title: intl.formatMessage(messages.basic),
+        type: 'boolean',
+      },
+      inverted: {
+        title: intl.formatMessage(messages.inverted),
+        type: 'boolean',
+      },
+      compact: {
+        title: intl.formatMessage(messages.compact),
+        type: 'boolean',
+      },
+      circular: {
+        title: intl.formatMessage(messages.circular),
+        type: 'boolean',
+      },
+      floated: {
+        title: intl.formatMessage(messages.floated),
+        choices: [
+          ['left', intl.formatMessage(messages.left)],
+          ['right', intl.formatMessage(messages.right)],
+        ],
+      },
+      textAlign: {
+        title: intl.formatMessage(messages.textAlign),
+        choices: [
+          ['left', intl.formatMessage(messages.left)],
+          ['right', intl.formatMessage(messages.right)],
+          ['center', intl.formatMessage(messages.center)],
+        ],
+      },
+      color: {
+        title: intl.formatMessage(messages.color),
+        widget: 'color_picker',
+        colors: countUpConfig.colors,
       },
     },
     required: ['start', 'end'],
