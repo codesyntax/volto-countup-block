@@ -1,3 +1,9 @@
+## 1.1.0 (2024-03-13)
+
+### Feature
+
+- Modify schema to simplify block edition @ionlizarazu [#1](https://github.com/codesyntax/voltocountup-block/pull/1)
+
 ### Changelog
 
 All notable changes to this project will be documented in this file. Dates are displayed in UTC.
