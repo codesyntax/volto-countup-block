@@ -1,5 +1,6 @@
 import config from '@plone/volto/registry';
 import CountUp from 'react-countup';
+import cx from 'classnames';
 import { Segment } from 'semantic-ui-react';
 import { withBlockExtensions } from '@plone/volto/helpers';
 
@@ -49,7 +50,10 @@ const CountUpBlockView = ({ data, className }) => {
   const TitleTag = titleTag || 'h2';
 
   return (
-    <Segment className={className} {...segmentData}>
+    <Segment
+      className={cx('countup-block-wrapper', className)}
+      {...segmentData}
+    >
       {title && titlePosition === 'above' && <TitleTag>{title}</TitleTag>}
 
       <CountUp {...data} {...countUpData} />
