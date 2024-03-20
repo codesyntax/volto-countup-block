@@ -107,5 +107,45 @@ const messages = defineMessages({
     id: 'Below',
     defaultMessage: 'Below',
   },
+  basic: {
+    id: 'Basic',
+    defaultMessage: 'Basic',
+  },
+  inverted: {
+    id: 'Inverted',
+    defaultMessage: 'Inverted',
+  },
+  compact: {
+    id: 'Compact',
+    defaultMessage: 'Compact',
+  },
+  circular: {
+    id: 'Circular',
+    defaultMessage: 'Circular',
+  },
+  floated: {
+    id: 'Floated',
+    defaultMessage: 'Floated',
+  },
+  textAlign: {
+    id: 'Text align',
+    defaultMessage: 'Text align',
+  },
+  center: {
+    id: 'Center',
+    defaultMessage: 'Center',
+  },
+  left: {
+    id: 'Left',
+    defaultMessage: 'Left',
+  },
+  right: {
+    id: 'Right',
+    defaultMessage: 'Right',
+  },
+  color: {
+    id: 'Color',
+    defaultMessage: 'Color',
+  },
 });
 export default messages;
