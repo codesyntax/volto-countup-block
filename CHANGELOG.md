@@ -1,3 +1,10 @@
+## 1.2.0 (2024-03-20)
+
+### Feature
+
+- Add support of block and class extensions @ionlizarazu [#2](https://github.com/codesyntax/voltocountup-block/pull/2)
+- add styling schema @ionlizarazu [#3](https://github.com/codesyntax/voltocountup-block/pull/3)
+
 ## 1.1.0 (2024-03-13)
 
 ### Feature

@@ -1,1 +1,0 @@
-add styling schema @ionlizarazu
