@@ -14,7 +14,7 @@ const applyConfig = (config) => {
     mostUsed: false,
     blockHasOwnFocusManagement: false,
     sidebarTab: 1,
-    common: true,
+    group: 'common',
     titleTags: [
       ['h1', 'h1'],
       ['h2', 'h2'],
