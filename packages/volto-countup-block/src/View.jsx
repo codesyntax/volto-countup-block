@@ -4,7 +4,7 @@ import cx from 'classnames';
 import { Segment } from 'semantic-ui-react';
 import { withBlockExtensions } from '@plone/volto/helpers';
 
-const CountUpBlockView = ({ data, className }) => {
+const CountUpBlockView = ({ data, className, style }) => {
   const values = config.blocks.blocksConfig['countUpBlock'].schemaValues;
   const {
     delay = values.delay ?? 0,
@@ -50,15 +50,17 @@ const CountUpBlockView = ({ data, className }) => {
   const TitleTag = titleTag || 'h2';
 
   return (
-    <Segment
-      className={cx('countup-block-wrapper', className)}
-      {...segmentData}
-    >
-      {title && titlePosition === 'above' && <TitleTag>{title}</TitleTag>}
+    <div className={cx('block countup-block', className)} style={style}>
+      <Segment
+        className={cx('countup-block-wrapper', className)}
+        {...segmentData}
+      >
+        {title && titlePosition === 'above' && <TitleTag>{title}</TitleTag>}
 
-      <CountUp {...data} {...countUpData} />
-      {title && titlePosition === 'below' && <TitleTag>{title}</TitleTag>}
-    </Segment>
+        <CountUp {...data} {...countUpData} />
+        {title && titlePosition === 'below' && <TitleTag>{title}</TitleTag>}
+      </Segment>
+    </div>
   );
 };
 
