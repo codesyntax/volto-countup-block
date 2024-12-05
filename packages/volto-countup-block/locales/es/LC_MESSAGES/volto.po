@@ -1,0 +1,199 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Plone\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-05-09 11:45-0400\n"
+"PO-Revision-Date: 2023-05-10 11:34-0400\n"
+"Last-Translator: Leonardo J. Caballero G. <leonardocaballero@gmail.com>\n"
+"Language: es\n"
+"Language-Team: ES <LL@li.org>\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Preferred-Encodings: utf-8\n"
+"MIME-Version: 1.0\n"
+"Language-Code: es\n"
+"Language-Name: Español\n"
+"Domain: volto\n"
+"X-Is-Fallback-For: es-ar es-bo es-cl es-co es-cr es-do es-ec es-es es-sv es-gt es-hn es-mx es-ni es-pa es-py es-pe es-pr es-us es-uy es-ve\n"
+"X-Generator: Poedit 2.2.1\n"
+
+#. Default: "Above"
+#: messages
+msgid "Above"
+msgstr ""
+
+#. Default: "Basic"
+#: messages
+msgid "Basic"
+msgstr ""
+
+#. Default: "Below"
+#: messages
+msgid "Below"
+msgstr ""
+
+#. Default: "Center"
+#: messages
+msgid "Center"
+msgstr ""
+
+#. Default: "Character to use as decimal"
+#: messages
+msgid "Character to use as decimal"
+msgstr ""
+
+#. Default: "Character to use as thousands separator"
+#: messages
+msgid "Character to use as thousands separator"
+msgstr ""
+
+#. Default: "Circular"
+#: messages
+msgid "Circular"
+msgstr ""
+
+#. Default: "Color"
+#: messages
+msgid "Color"
+msgstr ""
+
+#. Default: "Compact"
+#: messages
+msgid "Compact"
+msgstr ""
+
+#. Default: "CountUp block configuration"
+#: messages
+msgid "CountUp block configuration"
+msgstr ""
+
+#. Default: "Decimal separator"
+#: messages
+msgid "Decimal separator"
+msgstr ""
+
+#. Default: "Delay"
+#: messages
+msgid "Delay"
+msgstr ""
+
+#. Default: "Duration"
+#: messages
+msgid "Duration"
+msgstr ""
+
+#. Default: "Duration in seconds, by default, 2"
+#: messages
+msgid "Duration in seconds, by default, 2"
+msgstr ""
+
+#. Default: "End"
+#: messages
+msgid "End"
+msgstr ""
+
+#. Default: "Final number for the countUp"
+#: messages
+msgid "Final number for the countUp"
+msgstr ""
+
+#. Default: "Floated"
+#: messages
+msgid "Floated"
+msgstr ""
+
+#. Default: "HTML tag that will be used to render the title"
+#: messages
+msgid "HTML tag that will be used to render the title"
+msgstr ""
+
+#. Default: "Inverted"
+#: messages
+msgid "Inverted"
+msgstr ""
+
+#. Default: "Left"
+#: messages
+msgid "Left"
+msgstr ""
+
+#. Default: "Number of decimals to render"
+#: messages
+msgid "Number of decimals to render"
+msgstr ""
+
+#. Default: "Nª of Decimals"
+#: messages
+msgid "Nª of Decimals"
+msgstr ""
+
+#. Default: "Position"
+#: messages
+msgid "Position"
+msgstr ""
+
+#. Default: "Position of the title tag"
+#: messages
+msgid "Position of the title tag"
+msgstr ""
+
+#. Default: "Prefix"
+#: messages
+msgid "Prefix"
+msgstr ""
+
+#. Default: "Prefix that will be shown before the number"
+#: messages
+msgid "Prefix that will be shown before the number"
+msgstr ""
+
+#. Default: "Right"
+#: messages
+msgid "Right"
+msgstr ""
+
+#. Default: "Seconds to wait until the counter starts"
+#: messages
+msgid "Seconds to wait until the counter starts"
+msgstr ""
+
+#. Default: "Start"
+#: messages
+msgid "Start"
+msgstr ""
+
+#. Default: "Starting number for the countUp"
+#: messages
+msgid "Starting number for the countUp"
+msgstr ""
+
+#. Default: "Suffix"
+#: messages
+msgid "Suffix"
+msgstr ""
+
+#. Default: "Suffix that will be shown after the number"
+#: messages
+msgid "Suffix that will be shown after the number"
+msgstr ""
+
+#. Default: "Text align"
+#: messages
+msgid "Text align"
+msgstr ""
+
+#. Default: "Thousands separator"
+#: messages
+msgid "Thousands separator"
+msgstr ""
+
+#. Default: "Title HTML tag"
+#: messages
+msgid "Title HTML tag"
+msgstr ""
+
+#. Default: "Title of the counter"
+#: messages
+msgid "Title of the counter"
+msgstr ""
